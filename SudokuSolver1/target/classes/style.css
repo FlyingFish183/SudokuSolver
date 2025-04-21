@@ -1,0 +1,38 @@
+.text-field {
+    -fx-border-color: lightgray;
+    -fx-border-width: 1;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+}
+
+/* Thicker right borders after columns 2 and 5 */
+#cell02, #cell05, #cell08,
+#cell12, #cell15, #cell18,
+#cell22, #cell25, #cell28,
+#cell32, #cell35, #cell38,
+#cell42, #cell45, #cell48,
+#cell52, #cell55, #cell58,
+#cell62, #cell65, #cell68,
+#cell72, #cell75, #cell78,
+#cell82, #cell85, #cell88 {
+    -fx-border-right-width: 3;
+}
+
+/* Thicker bottom borders after rows 2 and 5 */
+#cell60, #cell61, #cell62, #cell63, #cell64, #cell65, #cell66, #cell67, #cell68,
+#cell30, #cell31, #cell32, #cell33, #cell34, #cell35, #cell36, #cell37, #cell38 {
+    -fx-border-bottom-width: 3;
+}
+
+/* Optional: thicker left/top borders for a full box effect */
+#cell00, #cell03, #cell06,
+#cell30, #cell33, #cell36,
+#cell60, #cell63, #cell66 {
+    -fx-border-left-width: 3;
+}
+
+#cell00, #cell01, #cell02, #cell03, #cell04, #cell05, #cell06, #cell07, #cell08 {
+    -fx-border-top-width: 3;
+}
